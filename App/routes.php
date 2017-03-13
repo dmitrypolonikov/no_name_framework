@@ -15,7 +15,8 @@ $router->prefix("/api", function ($router){
         $router->prefix("/users", function ($router){
 
             $router->route("index", ["GET"], "/", "IndexHandler@index");
-            $router->route("index2", ["GET"], "/", "IndexHandler@index2")->middleware(["asd"]);
+//            $router->route("index2", ["GET"], "/", "IndexHandler@index2")->middleware(["asd"]);
+
 
 
         });

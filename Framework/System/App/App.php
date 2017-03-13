@@ -11,6 +11,11 @@ namespace Framework\System\App
         {
             $this->routeMap = $router->getRoutes();
             $this->config = $config;
+            \SHOW_VAR\SV($router->getRoutes());
+        }
+        public function run()
+        {
+
         }
     }
 }

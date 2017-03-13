@@ -12,3 +12,5 @@ include_once PATH . DIRECTORY_SEPARATOR . "Framework" . DIRECTORY_SEPARATOR . "S
 
 use Framework\System\Route\Router;
 $router = new Router();
+
+

@@ -13,10 +13,48 @@ namespace Framework\System\Route
          */
         public function route( $routeName, array $methods = [], $route, $handler )
         {
-            $route = $this->generateRoute($routeName, $methods, $route, $handler);
-
-            $this->last_processed_route_index = array_push($this->routes, $route);;
+            $this->generateRoute($routeName, $methods, $route, $handler);
             return $this;
+        }
+        /**
+         * Устанавливает маршрут GET
+         * @param $routeName
+         * @param $route
+         * @param $handler
+         */
+        public function get($routeName, $route, $handler)
+        {
+
+        }
+        /**
+         * Устанавливает маршрут POST
+         * @param $routeName
+         * @param $route
+         * @param $handler
+         */
+        public function post($routeName, $route, $handler)
+        {
+
+        }
+        /**
+         * Устанавливает маршрут DELETE
+         * @param $routeName
+         * @param $route
+         * @param $handler
+         */
+        public function delete($routeName, $route, $handler)
+        {
+
+        }
+        /**
+         * Устанавливает маршрут PUT
+         * @param $routeName
+         * @param $route
+         * @param $handler
+         */
+        public function put($routeName, $route, $handler)
+        {
+
         }
         /**
          * Устанавливает префикс маршрута

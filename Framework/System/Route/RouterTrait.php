@@ -29,19 +29,16 @@ namespace Framework\System\Route
          *
          * @return array
          */
-        protected function generateRoute($routeName, array $methods, $route, $handler)
+        protected function generateRoute($routeName, $methods, $route, $handler)
         {
             /**
              * Сборка пути
              */
-            $route_string = "".implode($this->prefixes).$route;
+            $this->routes[$routeName]["route"] = implode($this->prefixes).$route;
+            if (is_array($methods))
+            {
 
-            return [
-                "name" => $routeName,
-                "route" => $route_string,
-                "middlewares" => []
-            ];
-
+            }
         }
 
         /**
