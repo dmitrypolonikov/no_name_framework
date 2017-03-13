@@ -4,6 +4,8 @@ require PATH. DIRECTORY_SEPARATOR . 'Framework' . DIRECTORY_SEPARATOR . 'libs' .
 
 
 include_once PATH . DIRECTORY_SEPARATOR . "Framework" . DIRECTORY_SEPARATOR . "System" . DIRECTORY_SEPARATOR . "bootstrap.php";
+include_once PATH . DIRECTORY_SEPARATOR . "App" . DIRECTORY_SEPARATOR . "config.php";
 include_once PATH . DIRECTORY_SEPARATOR . "App" . DIRECTORY_SEPARATOR . "routes.php";
+include_once PATH . DIRECTORY_SEPARATOR . "App" . DIRECTORY_SEPARATOR . "bootstrap.php";
 
 

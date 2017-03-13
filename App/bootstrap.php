@@ -8,7 +8,9 @@
  *
  */
 
-
+use Framework\System\App\App;
+$config = require PATH . DIRECTORY_SEPARATOR . "App" . DIRECTORY_SEPARATOR . "config.php";
+$app = new App($router, $config);
 
 
 

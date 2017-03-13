@@ -31,4 +31,4 @@ $router->route("index7", ["GET"], "/asd", "IndexHandler@index7");
 
 
 
-print_r($router->getRoutes());
+
